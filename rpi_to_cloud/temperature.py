@@ -2,7 +2,7 @@ from Adafruit_BMP.BMP085 import BMP085
 from elasticsearch import Elasticsearch
 from datetime import datetime
 
-sensor = BMP085().read_temperature()
+temp = BMP085().read_temperature()
 
 es = Elasticsearch( ['<ip>'])  # AWS ELK Server IP:   35.163.69.146
 doc = {
