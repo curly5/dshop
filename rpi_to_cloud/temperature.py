@@ -6,7 +6,7 @@ temp = BMP085().read_temperature()
 
 es = Elasticsearch( ['<ip>'])  # AWS ELK Server IP:   35.163.69.146
 doc = {
-    'author': ’<your_name>',
+    'author': '<your_name>',
     'temp': temp,
     'timestamp': datetime.now()
 }
